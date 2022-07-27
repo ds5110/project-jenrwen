@@ -48,4 +48,9 @@ python src/app.py
 
 ## Project plan
 
+*ask for clarification*
+- ask about duplicate families in the same sheet
+- ask about different programs/classrooms
+- ask about report average, families with complete assessments
+- +/- rows
 

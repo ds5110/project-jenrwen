@@ -13,7 +13,11 @@ print(col)
 df.rename(columns=col, inplace=True)
 print(df.head(3))
 
-#df.drop([0,1,2,3], axis=0, inplace=True)
+df.drop([0,1,2,3], axis=0, inplace=True)
+
+#df = df[~df['Family'].isin(['ACAP'])]
+df = df[~df["Family"].str.contains("ACAP", "Classroom", na=False)]
+df = df[~df["Assessment"].str.contains("-", na=False)]
 # This function replaces a name in the first column with with the integer from column 3
 def clean(row):
     #print(type(row))

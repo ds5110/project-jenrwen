@@ -1,8 +1,6 @@
-# Project (template)
+# Project (ACAP-ME)
 
-# Exploring COVID-19 Vaccine Effectiveness
-
-This fictional example is based on reality.
+# Exploring ACAP Family Outcomes
 
 ## NOTE to students
 
@@ -16,31 +14,24 @@ Additional guidance is in the [course repo](https://github.com/ds5110/summer-202
 
 ## Project partners
 
-* Student #1 (identify partner by name -- the entire team should use this partner's github-classroom repo for the project)
-* Student #2 (ditto)
-* Student #3 (ditto)
+* Jennifer Wen
+* Evan Chan
 
 ## Goal
 
-The project goal is to develop a predictive model for COVID-19 vaccine effectiveness 
-at the county level based on death rate and possibly other socioeconomic factors.
-We'll start by investigating the relationship between 
-vaccination rate and death rate. 
-We'll be careful to determine time-dependence, since vaccines were rolled out in May 2021 and 
-probably had their maximum effectiveness the following November, as mentioned
-in [this NPR story](https://www.npr.org/sections/health-shots/2021/12/05/1059828993/data-vaccine-misinformation-trump-counties-covid-death-rate), which is where we developed the idea for this project.
+The project goal is to evaluate how family outcomes within ACAP-ME's program changes over the past four years.
+We can see if the scores were affected by the pandemic in the 2020 school year.
+We'll start by looking at how average families scores change and seeing if there is any correlation between different outcome categories.
+If families are enrolled in the program over multiple years, we can investigate the outcome trends for those families.
 
 ## Data
 
-Primary sources of data will be CDC and Johns Hopkins university.
+Primary sources of data will be from our stakeholder form ACAP.
 
-* [CDC](https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-County)
-* [Johns Hopkins](https://github.com/CSSEGISandData/COVID-19)
 
 ## Stakeholder
 
-This could be a faculty member or someone from an organization with an interest in this problem who
-would be willing to provide feedback on your prototypes.
+Jamie Chandler
 
 ## Preliminary result
 
@@ -57,4 +48,9 @@ python src/app.py
 
 ## Project plan
 
-[plan.md](plan.md)
+*ask for clarification*
+- ask about duplicate families in the same sheet
+- ask about different programs/classrooms
+- ask about report average, families with complete assessments
+- +/- rows
+

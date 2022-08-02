@@ -15,17 +15,28 @@ print(df.head(3))
 
 df.drop([0,1,2,3], axis=0, inplace=True)
 
-#df = df[~df['Family'].isin(['ACAP'])]
-df = df[~df["Family"].str.contains("ACAP", "Classroom", na=False)]
+#remove calculated data
+df = df[~df["Family"].str.contains("ACAP", na=False)]
 df = df[~df["Assessment"].str.contains("-", na=False)]
+
+
+df.ffill(axis=0, limit=1, inplace=True)
+
+df = df[~df["Family"].str.contains('Average|complete|Scoring|Gains', regex=True)]
+
+df.drop_duplicates(inplace=True)
+# drop the empty columns
+df.dropna(how='all', axis=1, inplace=True)
+
+
 # This function replaces a name in the first column with with the integer from column 3
-def clean(row):
+#def clean(row):
     #print(type(row))
     #if isinstance(row[0], str) and "ACAP" in row[0]:
     #    print(type(row[0]), row[0], row[2])
     #    df.drop(row[0], axis=0)
-    if isinstance(row[3], str) and "1" in row[3]:
-        print(row)
+    #if isinstance(row[3], str) and "1" in row[3]:
+        #print(row)
         #new_df = pd.concat([new_df, row])
 
 # Clean the dataframe

@@ -50,7 +50,7 @@ def clean(df, year):
 
     #clear out the digits that were forward filled in the Classroom column
     #df.Classroom = df.Classroom.replace(to_replace="^[0-9]{2}$", value=None)
-    df.Classroom = df.Classroom[~df.Classroom.str.contains('^[0-9]{2}$', regex=True)]
+    df["Classroom"] = df["Classroom"][~df["Classroom"].str.contains('^[0-9]{2}$', regex=True)]
     #forward fill the classroom names to fill in the emptied digit slots
     df.ffill(axis=0, inplace=True)
     #remove the rows that were just forawrd filled classroom names
@@ -83,20 +83,35 @@ def clean(df, year):
         #if isinstance(row[3], str) and "1" in row[3]:
             #print(row)
             #new_df = pd.concat([new_df, row])
+    return df
 
 #clean the dataframes
-clean(df2018, "2018-2019")
-clean(df2019, "2019-2020")   
-clean(df2020, "2020-2021")   
-clean(df2021, "2021-2022")   
-            
+df2018 = clean(df2018, "2018-2019")
+df2019 = clean(df2019, "2019-2020")   
+df2020 = clean(df2020, "2020-2021")   
+df2021 = clean(df2021, "2021-2022")   
+
+df2018.index = df2018['Family'].astype(str) + df2018['Assessment'].astype(str) + df2018['Year']
+df2019.index = df2019['Family'].astype(str) + df2019['Assessment'].astype(str) + df2019['Year']
+df2020.index = df2020['Family'].astype(str) + df2020['Assessment'].astype(str) + df2020['Year']
+df2021.index = df2021['Family'].astype(str) + df2021['Assessment'].astype(str) + df2021['Year']
+
+print(df2018.index.duplicated)
+print(df2019.index.duplicated)
+print(df2020.index.duplicated)
+print(df2021.index.duplicated)
+
+#df2018.apply(clean, "2018-2019")
+ 
 # Clean the dataframe
 #df.apply(clean, axis=1)
 #print(new_df)
 #df[df[0].str.contains("ACAP")==False]
+df2018.to_csv("df2018.csv", index=True)
 
-concat_df = pd.concat([df2018, df2019, df2020, df2021])
+concat_df = pd.concat([df2018, df2019, df2020, df2021], ignore_index=True)
 
 # Write the cleaned data to a CSV file
-df.to_csv("test_organized.csv", index=False)
+df2018.to_csv("df2018.csv", index=True)
+concat_df.to_csv("test_combined.csv", index=False)
 print("organized")

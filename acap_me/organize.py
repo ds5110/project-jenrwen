@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 filename = "Family_outcomes_2018-2019.csv"
 
@@ -11,23 +12,43 @@ print(col)
 #new_df.columns = columns
 #new_df = pd.DataFrame(columns=col)
 df.rename(columns=col, inplace=True)
+#df.rename(index={1: "Classroom"})
 print(df.head(3))
 
 df.drop([0,1,2,3], axis=0, inplace=True)
 
+# drop the empty columns
+df.dropna(how='all', axis=1, inplace=True)
+
+#df.drop([1,2,3], axis=0, inplace=True)
+
 #remove calculated data
-df = df[~df["Family"].str.contains("ACAP", na=False)]
+#df = df[~df["Family"].str.contains("ACAP", na=False)]
 df = df[~df["Assessment"].str.contains("-", na=False)]
 
-
+df["Classroom"] = None
+df.ffill(axis=1, inplace=True)
 df.ffill(axis=0, limit=1, inplace=True)
 
 df = df[~df["Family"].str.contains('Average|complete|Scoring|Gains', regex=True)]
 
-df.drop_duplicates(inplace=True)
-# drop the empty columns
-df.dropna(how='all', axis=1, inplace=True)
+#df["Classroom"].replace(to_replace="^[0-9]{2}$", value=None, inplace=True)
 
+#filter = isinstance(df["Classroom"], str)
+#df["Classroom"].where(filter,inplace=True)
+
+#for column in df[["Classroom"]]:
+#    for value in df[column].values:
+#        if isinstance(value, int):
+#            value = None
+#    print(df[column])
+
+#df.loc[isinstance(df["Classroom"], int), "Classroom"] = None
+
+#df["Classroom"] = df["Classroom"].replace(88,None)
+
+df.drop_duplicates(inplace=True)
+df["Year"] = "2018-2019"
 
 # This function replaces a name in the first column with with the integer from column 3
 #def clean(row):

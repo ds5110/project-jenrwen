@@ -32,7 +32,10 @@ df.ffill(axis=0, limit=1, inplace=True)
 
 df = df[~df["Family"].str.contains('Average|complete|Scoring|Gains', regex=True)]
 
-#df["Classroom"].replace(to_replace="^[0-9]{2}$", value=None, inplace=True)
+#df.Classroom = df.Classroom.replace(to_replace="^[0-9]{2}$", value=None)
+df.Classroom = df.Classroom[~df.Classroom.str.contains('^[0-9]{2}$', regex=True)]
+df.ffill(axis=0, inplace=True)
+df = df[~df["Family"].str.contains("ACAP", na=False)]
 
 #filter = isinstance(df["Classroom"], str)
 #df["Classroom"].where(filter,inplace=True)

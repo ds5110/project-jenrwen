@@ -20,7 +20,7 @@ def clean(df, year):
     #print(col)
     #new_df.columns = columns
     #new_df = pd.DataFrame(columns=col)
-    
+
     #rename the columns to the names of the 4th row
     df.rename(columns=col, inplace=True)
     #df.rename(index={1: "Classroom"})
@@ -31,9 +31,10 @@ def clean(df, year):
 
     #remove the last line
     df = df[~df["Family"].str.contains("Gains", na=False)]
-    
+
     # drop the empty columns
-    df.dropna(how='all', axis=1, inplace=True)
+    #df.dropna(how='all', axis=1, inplace=True)
+    df = df.dropna(how='all', axis=1)
 
     #df.drop([1,2,3], axis=0, inplace=True)
 
@@ -86,13 +87,17 @@ def clean(df, year):
         #if isinstance(row[3], str) and "1" in row[3]:
             #print(row)
             #new_df = pd.concat([new_df, row])
+
+    # Remove column with inconsistent name (across different datasets)
+    df = df.drop(df.columns[1], axis=1)
+
     return df
 
 #clean the dataframes
 df2018 = clean(df2018, "2018-2019")
-df2019 = clean(df2019, "2019-2020")   
-df2020 = clean(df2020, "2020-2021")   
-df2021 = clean(df2021, "2021-2022")   
+df2019 = clean(df2019, "2019-2020")
+df2020 = clean(df2020, "2020-2021")
+df2021 = clean(df2021, "2021-2022")
 
 #df2018.index = df2018['Family'].astype(str) + df2018['Assessment'].astype(str) + df2018['Year']
 #df2019.index = df2019['Family'].astype(str) + df2019['Assessment'].astype(str) + df2019['Year']
@@ -105,16 +110,15 @@ df2021 = clean(df2021, "2021-2022")
 #print(df2021.index.duplicated)
 
 #df2018.apply(clean, "2018-2019")
- 
+
 # Clean the dataframe
 #df.apply(clean, axis=1)
 #print(new_df)
 #df[df[0].str.contains("ACAP")==False]
 #df2018.to_csv("df2018.csv", index=True)
 
-
 #STILL NEED TO FIGURE OUT HOW TO CONCAT TOGETHER
-#concat_df = pd.concat([df2018, df2019, df2020, df2021], ignore_index=True)
+concat_df = pd.concat([df2018, df2019, df2020, df2021], ignore_index=True)
 
 # Write the cleaned data to a CSV file
 #df2018.to_csv("df2018.csv", index=True)

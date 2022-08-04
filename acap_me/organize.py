@@ -29,6 +29,9 @@ def clean(df, year):
     #drop the first 4 rows because there is no useful info
     df.drop([0,1,2,3], axis=0, inplace=True)
 
+    #remove the last line
+    df = df[~df["Family"].str.contains("Gains", na=False)]
+    
     # drop the empty columns
     df.dropna(how='all', axis=1, inplace=True)
 
@@ -91,15 +94,15 @@ df2019 = clean(df2019, "2019-2020")
 df2020 = clean(df2020, "2020-2021")   
 df2021 = clean(df2021, "2021-2022")   
 
-df2018.index = df2018['Family'].astype(str) + df2018['Assessment'].astype(str) + df2018['Year']
-df2019.index = df2019['Family'].astype(str) + df2019['Assessment'].astype(str) + df2019['Year']
-df2020.index = df2020['Family'].astype(str) + df2020['Assessment'].astype(str) + df2020['Year']
-df2021.index = df2021['Family'].astype(str) + df2021['Assessment'].astype(str) + df2021['Year']
+#df2018.index = df2018['Family'].astype(str) + df2018['Assessment'].astype(str) + df2018['Year']
+#df2019.index = df2019['Family'].astype(str) + df2019['Assessment'].astype(str) + df2019['Year']
+#df2020.index = df2020['Family'].astype(str) + df2020['Assessment'].astype(str) + df2020['Year']
+#df2021.index = df2021['Family'].astype(str) + df2021['Assessment'].astype(str) + df2021['Year']
 
-print(df2018.index.duplicated)
-print(df2019.index.duplicated)
-print(df2020.index.duplicated)
-print(df2021.index.duplicated)
+#print(df2018.index.duplicated)
+#print(df2019.index.duplicated)
+#print(df2020.index.duplicated)
+#print(df2021.index.duplicated)
 
 #df2018.apply(clean, "2018-2019")
  
@@ -107,11 +110,19 @@ print(df2021.index.duplicated)
 #df.apply(clean, axis=1)
 #print(new_df)
 #df[df[0].str.contains("ACAP")==False]
-df2018.to_csv("df2018.csv", index=True)
+#df2018.to_csv("df2018.csv", index=True)
 
-concat_df = pd.concat([df2018, df2019, df2020, df2021], ignore_index=True)
+
+#STILL NEED TO FIGURE OUT HOW TO CONCAT TOGETHER
+#concat_df = pd.concat([df2018, df2019, df2020, df2021], ignore_index=True)
 
 # Write the cleaned data to a CSV file
-df2018.to_csv("df2018.csv", index=True)
-concat_df.to_csv("test_combined.csv", index=False)
+#df2018.to_csv("df2018.csv", index=True)
+#concat_df.to_csv("test_combined.csv", index=False)
+
+df2018.to_csv("2018-2019_assessment_organized.csv", index=False)
+df2019.to_csv("2019-2020_assessment_organized.csv", index=False)
+df2020.to_csv("2020-2021_assessment_organized.csv", index=False)
+df2021.to_csv("2021-2022_assessment_organized.csv", index=False)
+
 print("organized")

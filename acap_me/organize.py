@@ -122,7 +122,7 @@ concat_df = pd.concat([df2018, df2019, df2020, df2021], ignore_index=True)
 
 # Write the cleaned data to a CSV file
 #df2018.to_csv("df2018.csv", index=True)
-#concat_df.to_csv("test_combined.csv", index=False)
+concat_df.to_csv("combined_assesments.csv", index=False)
 
 df2018.to_csv("2018-2019_assessment_organized.csv", index=False)
 df2019.to_csv("2019-2020_assessment_organized.csv", index=False)

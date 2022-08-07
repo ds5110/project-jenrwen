@@ -33,18 +33,33 @@ Primary sources of data will be from our stakeholder form ACAP.
 
 Jamie Chandler
 
+
 ## Preliminary result
 
-The figure shows vaccination rate versus population for each county in the U.S. 
-It was created using a CSV file downloaded from obtained from the CDC site listed above.
-
-![](figs/fig1.png)
-
-Recreate this figure with the following command:
+<img src="figs/fig1.png" width="500">
 
 ```
-python src/app.py
+python src/src1.py
 ```
+
+<img src="figs/fig2.png" width="500">
+
+```
+python src/src1.py
+```
+
+<img src="figs/fig3.png" width="500">
+
+```
+python src/src1.py
+```
+
+<img src="figs/fig4.png" width="500">
+
+```
+python src/src1.py
+```
+
 
 ## Project plan
 

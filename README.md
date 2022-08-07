@@ -39,25 +39,25 @@ Jamie Chandler
 <img src="figs/fig1.png" width="800">
 
 ```
-python src/src1.py
+python src/AverageAssessmentOutcomeScoresbyYear.py
 ```
 
 <img src="figs/fig2.png" width="800">
 
 ```
-python src/src1.py
+python src/AverageAssessmentOutcomeScoresbyYear.py
 ```
 
 <img src="figs/fig3.png" width="800">
 
 ```
-python src/src1.py
+python src/AverageAssessmentOutcomeScoresbyYear.py
 ```
 
 <img src="figs/fig4.png" width="800">
 
 ```
-python src/src1.py
+python src/AverageAssessmentOutcomeScoresbyYear.py
 ```
 
 

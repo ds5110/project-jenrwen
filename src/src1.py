@@ -47,12 +47,13 @@ def create_means_df(assessment_means):
   return df_means
 
 # plots the mean values between assessments for each outcome
-def plot_year_means(df):
+def plot_year_means(df, year):
   assessment_means = get_assessment_means(df)
   df_means = create_means_df(assessment_means)
   sns.set(rc = {'figure.figsize':(20,10)})
   ax = sns.barplot(x='Assessment Outcome', y='Score', hue='Assessment', data=df_mean)
-  ax.set(xlabel='Assessment Outcomes 2018', ylabel='Assessment Scores')
+  ax.set(title='{} Average Assessment Scores'.format(year))
+  ax.set(xlabel='Assessment Outcomes', ylabel='Average Assessment Scores')
   ax.tick_params(axis='x', rotation=90)
   
 plot_year_means(df)

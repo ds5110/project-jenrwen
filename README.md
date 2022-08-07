@@ -42,19 +42,19 @@ Jamie Chandler
 python src/src1.py
 ```
 
-<img src="figs/fig2.png" width="500">
+<img src="figs/fig2.png" width="800">
 
 ```
 python src/src1.py
 ```
 
-<img src="figs/fig3.png" width="500">
+<img src="figs/fig3.png" width="800">
 
 ```
 python src/src1.py
 ```
 
-<img src="figs/fig4.png" width="500">
+<img src="figs/fig4.png" width="800">
 
 ```
 python src/src1.py

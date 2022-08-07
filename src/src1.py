@@ -51,7 +51,7 @@ def plot_year_means(df, year):
   assessment_means = get_assessment_means(df)
   df_means = create_means_df(assessment_means)
   sns.set(rc = {'figure.figsize':(20,10)})
-  ax = sns.barplot(x='Assessment Outcome', y='Score', hue='Assessment', data=df_mean)
+  ax = sns.barplot(x='Assessment Outcome', y='Score', hue='Assessment', data=df_means)
   ax.set(title='{} Average Assessment Scores'.format(year))
   ax.set(xlabel='Assessment Outcomes', ylabel='Average Assessment Scores')
   ax.tick_params(axis='x', rotation=90)

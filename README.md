@@ -36,7 +36,7 @@ Jamie Chandler
 
 ## Preliminary result
 
-<img src="figs/fig1.png" width="500">
+<img src="figs/fig1.png" width="800">
 
 ```
 python src/src1.py

@@ -15,9 +15,11 @@ def plot_combined_years(df):
   # print(df_year.head(5))
   sns.set_theme(color_codes=True)
   # create plot
+  sns.set_style("darkgrid")
   sns.set(rc = {'figure.figsize':(15,10)})
   scores_plot = sns.barplot(x=df_year['Year'], y=df_year['Assessment Score'], hue=df_year['Assessment'])
   scores_plot.set_xlabel("School Year")
   scores_plot.set_title("2018-2021 Outcomes Averages")
+  plt.show()
  
 plot_combined_years(df)

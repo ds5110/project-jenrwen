@@ -8,15 +8,16 @@ df = pd.read_csv('https://raw.githubusercontent.com/ds5110/project-jenrwen/main/
 
 def organize_age_groups(df):
   # organize df by age group based on information from stakeholder
-  df_class_groups = df.copy()
-  df_class_groups.loc[:, 'Housing':'TOTAL'] = df_class_groups.loc[:, 'Housing':'TOTAL'].diff()
-  df_class_groups = df_class_groups.loc[(df_class_groups['Assessment'] == 2)]
+  df.loc[:, 'Housing':'TOTAL'] = df.loc[:, 'Housing':'TOTAL'].diff()
+  df_class_groups = df.loc[(df['Assessment'] == 2)]
   
   # EHS and IT under age 3
   df_class_groups['Classroom'].mask(df['Classroom'].str.contains("EHS", na=False), 'Early Head Start (EHS)', inplace=True)
   df_class_groups['Classroom'].mask(df['Classroom'].str.contains("Early Head Start", na=False), 'Early Head Start (EHS)', inplace=True)
   df_class_groups['Classroom'].mask(df['Classroom'].str.contains("I/T", na=False), 'Infant Toddler (IT)', inplace=True)
   df_class_groups['Classroom'].mask(df['Classroom'].str.contains("Infant/Toddler", na=False), 'Infant Toddler (IT)', inplace=True)
+  df_class_groups['Classroom'].mask(df['Classroom'].str.contains("Infant", na=False), 'Infant Toddler (IT)', inplace=True)
+  df_class_groups['Classroom'].mask(df['Classroom'].str.contains("Toddler", na=False), 'Infant Toddler (IT)', inplace=True)
   
   # Head Start (HS), Preschool (PS), Early Intervention (could be Foundation or EI) ages 3-5, some 6
   df_class_groups['Classroom'].mask(df['Classroom'].str.contains(" HS", na=False), 'Head Start (HS)', inplace=True)
@@ -24,7 +25,9 @@ def organize_age_groups(df):
   df_class_groups['Classroom'].mask(df['Classroom'].str.contains(" PS", na=False), 'Preschool (PS)', inplace=True)
   df_class_groups['Classroom'].mask(df['Classroom'].str.contains("Preschool", na=False), 'Preschool (PS)', inplace=True)
   df_class_groups['Classroom'].mask(df['Classroom'].str.contains("Foundation", na=False), 'Early Intervention', inplace=True)
-
+  df_class_groups['Classroom'].mask(df['Classroom'].str.contains("No Classroom", na=False), 'Head Start (HS)', inplace=True)
+  df_class_groups['Classroom'].mask(df['Classroom'].str.contains(" AM", na=False), 'Head Start (HS)', inplace=True)
+  
   return df_class_groups
 
 def create_class_changes_subplot(class_changes):
@@ -51,7 +54,7 @@ def create_class_changes_subplot(class_changes):
   
 def plot_change_classroom_type(df):
   # call function to organize age groups
-  organize_age_groups(df)
+  assessment_outcomes = organize_age_groups(df)
 
   # get list of average changes by year
   df_classes_2018 = df_class_groups.loc[(df['Year'] == '2018-2019')]

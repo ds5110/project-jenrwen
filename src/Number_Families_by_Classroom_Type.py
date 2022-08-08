@@ -40,6 +40,7 @@ def create_family_count_subplot(family_counts):
     count_plot.set_xlabel("{}".format(2018+i), fontsize = 15)
     if i == 0:
       count_plot.set_ylabel("Number of Families Enrolled", fontsize = 20)
+    sns.set_style("darkgrid")
     count_plot.tick_params(axis='x', rotation=90, labelsize = 15)
     count_plot.tick_params(axis='y', labelsize = 15)
     count_plot.axes.set_ylim(0, 100)

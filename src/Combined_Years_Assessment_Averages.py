@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-#Read in the combined data file
+# read in the combined data file
 df = pd.read_csv('https://raw.githubusercontent.com/ds5110/project-jenrwen/main/acap_me/combined_assesments.csv?token=GHSAT0AAAAAABU2R74H5MMTQ3ISZXKDPXPUYXQKIFQ')
 
-# Averages of all assessments each year
+# averages of all assessments each year
 def plot_combined_years(df):
   # get assessment outcomes list
   assessment_outcomes = df.columns[2:21].array

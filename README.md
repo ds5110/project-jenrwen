@@ -78,6 +78,13 @@ Number of Families Enrolled by Year
 python src/Number_Families_by_Year.py
 ```
 
+Number of Families Enrolled by Classroom Type
+<img src="figs/fig7.png" width="800">
+
+```
+python src/Number_Families_by_Classroom_Type.py
+```
+
 
 ## Project plan
 

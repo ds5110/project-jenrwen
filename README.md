@@ -75,7 +75,7 @@ Number of Families Enrolled by Year
 <img src="figs/fig6.png" width="800">
 
 ```
-python src/Combined_Years_Assessment_Averages.py
+python src/Number_Families_by_Year.py
 ```
 
 

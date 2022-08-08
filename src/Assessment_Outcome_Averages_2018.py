@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 
 # read the dataframe of a specific year
-df = pd.read_csv('')
+df = pd.read_csv('../acap_me/2018-2019_assessment_organized.csv')
 
 # returns list of means 
 def get_mean_list(column_means):

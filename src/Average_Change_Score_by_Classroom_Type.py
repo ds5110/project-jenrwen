@@ -54,7 +54,7 @@ def create_class_changes_subplot(class_changes):
   
 def plot_change_classroom_type(df):
   # call function to organize age groups
-  assessment_outcomes = organize_age_groups(df)
+  df_class_groups = organize_age_groups(df)
 
   # get list of average changes by year
   df_classes_2018 = df_class_groups.loc[(df['Year'] == '2018-2019')]

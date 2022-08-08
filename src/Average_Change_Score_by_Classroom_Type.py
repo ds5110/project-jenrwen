@@ -46,6 +46,8 @@ def create_class_changes_subplot(class_changes):
     scores_plot.set_xlabel("{}".format(2018+i), fontsize = 15)
     if i == 0:
       scores_plot.set_ylabel("Average Change in Assessment Score", fontsize = 20)
+    else:
+      scores_plot.set(ylabel=None)
     scores_plot.tick_params(axis='x', rotation=90, labelsize = 15)
     scores_plot.tick_params(axis='y', labelsize = 15)
     scores_plot.axes.set_ylim(-0.2, 0.5)

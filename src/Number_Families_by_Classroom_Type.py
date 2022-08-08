@@ -45,6 +45,8 @@ def create_family_count_subplot(family_counts):
     count_plot.axes.set_ylim(0, 100)
     i += 1
     
+  plt.show()
+    
 def plot_families_classroom_type(df):
   # call function to organize age groups
   organize_age_groups(df)

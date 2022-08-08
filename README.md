@@ -68,7 +68,7 @@ Combined Assesment Outcome Averages
 <img src="figs/fig5.png" width="800">
 
 ```
-python src/AverageAssessmentOutcomeScoresbyYear.py
+python src/Combined_Years_Assessment_Averages.py
 ```
 
 

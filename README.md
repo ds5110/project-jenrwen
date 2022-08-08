@@ -34,26 +34,30 @@ Primary sources of data will be from our stakeholder form ACAP.
 Jamie Chandler
 
 
-## Preliminary result
+## Preliminary Results
 
+2018 Assesment Outcome Averages
 <img src="figs/fig1.png" width="800">
 
 ```
 python src/AverageAssessmentOutcomeScoresbyYear.py
 ```
 
+2019 Assesment Outcome Averages
 <img src="figs/fig2.png" width="800">
 
 ```
 python src/AverageAssessmentOutcomeScoresbyYear.py
 ```
 
+2020 Assesment Outcome Averages
 <img src="figs/fig3.png" width="800">
 
 ```
 python src/AverageAssessmentOutcomeScoresbyYear.py
 ```
 
+2021 Assesment Outcome Averages
 <img src="figs/fig4.png" width="800">
 
 ```

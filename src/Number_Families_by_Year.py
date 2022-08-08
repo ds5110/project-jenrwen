@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 
 # read in the combined data file
-df = pd.read_csv('https://raw.githubusercontent.com/ds5110/project-jenrwen/main/acap_me/combined_assesments.csv?token=GHSAT0AAAAAABU2R74HMFYXLNQADKW4BVMWYXQMHLA')
+df = pd.read_csv('../acap_me/combined_asssessments.csv')
 
 # number of families enrolled each year
 def plot_num_fam(df):

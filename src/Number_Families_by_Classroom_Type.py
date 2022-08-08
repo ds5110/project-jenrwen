@@ -43,7 +43,7 @@ def create_family_count_subplot(family_counts):
     sns.set_style("darkgrid")
     count_plot.tick_params(axis='x', rotation=90, labelsize = 15)
     count_plot.tick_params(axis='y', labelsize = 15)
-    count_plot.axes.set_ylim(0, 100)
+    count_plot.axes.set_ylim(0, 120)
     i += 1
     
   plt.show()

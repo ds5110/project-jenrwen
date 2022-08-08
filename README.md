@@ -40,28 +40,28 @@ Jamie Chandler
 <img src="figs/fig1.png" width="800">
 
 ```
-python src/Assessment_Outcome_Averages_by_Year.py
+python src/Assessment_Outcome_Averages_2018.py
 ```
 
 2019 Assesment Outcome Averages
 <img src="figs/fig2.png" width="800">
 
 ```
-python src/Assessment_Outcome_Averages_by_Year.py
+python src/Assessment_Outcome_Averages_2019.py
 ```
 
 2020 Assesment Outcome Averages
 <img src="figs/fig3.png" width="800">
 
 ```
-python src/Assessment_Outcome_Averages_by_Year.py
+python src/Assessment_Outcome_Averages_2020.py
 ```
 
 2021 Assesment Outcome Averages
 <img src="figs/fig4.png" width="800">
 
 ```
-python src/Assessment_Outcome_Averages_by_Year.py
+python src/Assessment_Outcome_Averages_2021.py
 ```
 
 Combined Assesment Outcome Averages

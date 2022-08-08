@@ -85,6 +85,13 @@ Number of Families Enrolled by Classroom Type
 python src/Number_Families_by_Classroom_Type.py
 ```
 
+Average Change in Assessment Score by Classroom Type
+<img src="figs/fig8.png" width="800">
+
+```
+python src/Average_Change_Score_by_Classroom_Type.py
+```
+
 
 ## Project plan
 

@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 
 # read in the combined data file
-df = pd.read_csv('../acap_me/combined_asssesments.csv')
+df = pd.read_csv('../acap_me/combined_asssessments.csv')
 
 def organize_age_groups(df):
   # organize df by age group based on information from stakeholder

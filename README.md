@@ -71,6 +71,13 @@ Combined Assesment Outcome Averages
 python src/Combined_Years_Assessment_Averages.py
 ```
 
+Number of Families Enrolled by Year
+<img src="figs/fig6.png" width="800">
+
+```
+python src/Combined_Years_Assessment_Averages.py
+```
+
 
 ## Project plan
 

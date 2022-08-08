@@ -54,6 +54,8 @@ def create_class_changes_subplot(class_changes):
     scores_plot.axhline(0, color = 'black')
     i += 1
   
+  plt.show()
+  
 def plot_change_classroom_type(df):
   # call function to organize age groups
   df_class_groups = organize_age_groups(df)
@@ -69,3 +71,4 @@ def plot_change_classroom_type(df):
   create_class_changes_subplot(class_changes)
   
 plot_change_classroom_type(df)
+

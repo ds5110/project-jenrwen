@@ -19,6 +19,7 @@ def get_assessment_means(df):
   df_second_assessment = df.iloc[1::2]
   column_first_mean = df_first_assessment.mean(axis=0)
   column_second_mean = df_second_assessment.mean(axis=0)
+  # call function to get list of means
   first_list = get_mean_list(column_first_mean)
   second_list = get_mean_list(column_second_mean)
   assessment_means = first_list + second_list
@@ -48,7 +49,9 @@ def create_means_df(assessment_means):
 
 # plots the mean values between assessments for each outcome
 def plot_year_means(df, year):
+  # call function to get assessment means
   assessment_means = get_assessment_means(df)
+  # call function to create dataframe of means
   df_means = create_means_df(assessment_means)
   sns.set(rc = {'figure.figsize':(20,10)})
   ax = sns.barplot(x='Assessment Outcome', y='Score', hue='Assessment', data=df_means)

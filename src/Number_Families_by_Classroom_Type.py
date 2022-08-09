@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 
 # read in the combined data file
-df = pd.read_csv('acap_me/combined_asssessments.csv')
+df = pd.read_csv('acap_me/combined_assessments.csv')
 
 def organize_age_groups(df):
   # organize df by age group based on information from stakeholder
@@ -50,13 +50,13 @@ def create_family_count_subplot(family_counts):
     
 def plot_families_classroom_type(df):
   # call function to organize age groups
-  organize_age_groups(df)
+  df = organize_age_groups(df)
 
   # get list of family counts by year
-  family_count_2018 = df_class_groups.loc[(df['Year'] == '2018-2019')]['Classroom'].value_counts()
-  family_count_2019 = df_class_groups.loc[(df['Year'] == '2019-2020')]['Classroom'].value_counts()
-  family_count_2020 = df_class_groups.loc[(df['Year'] == '2020-2021')]['Classroom'].value_counts()
-  family_count_2021 = df_class_groups.loc[(df['Year'] == '2021-2022')]['Classroom'].value_counts()
+  family_count_2018 = df.loc[(df['Year'] == '2018-2019')]['Classroom'].value_counts()
+  family_count_2019 = df.loc[(df['Year'] == '2019-2020')]['Classroom'].value_counts()
+  family_count_2020 = df.loc[(df['Year'] == '2020-2021')]['Classroom'].value_counts()
+  family_count_2021 = df.loc[(df['Year'] == '2021-2022')]['Classroom'].value_counts()
   family_counts = [family_count_2018, family_count_2019, family_count_2020, family_count_2021]
   
   # call function to create subplots

@@ -25,7 +25,7 @@ Primary sources of data will be from our stakeholder form ACAP. Cleaned and re-f
 Jamie Chandler
 
 
-## Preliminary Results
+## Results
 
 2018 Assesment Outcome Averages
 <img src="figs/fig1.png" width="800">
@@ -83,12 +83,18 @@ Average Change in Assessment Score by Classroom Type
 python src/Average_Change_Score_by_Classroom_Type.py
 ```
 
+## Cleaning the data
+Because of the format of the original data, we had to remove family names for privacy and reformat everything in a way that can can be interpreted in a dataframe. To clean out the familiy names (original file with family names not included):
+
+```
+python acap_me/app.py
+```
+
+To reformat data to a usable file:
+```
+python acap_me/organize.py
+```
 
 ## Project plan
 
-*ask for clarification*
-- ask about duplicate families in the same sheet
-- ask about different programs/classrooms
-- ask about report average, families with complete assessments
-- +/- rows
 

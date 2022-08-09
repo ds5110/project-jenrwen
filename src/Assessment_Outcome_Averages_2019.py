@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 
 # read the dataframe of a specific year
-df = pd.read_csv('../acap_me/2019-2020_assessment_organized.csv')
+df = pd.read_csv('acap_me/2019-2020_assessment_organized.csv')
 
 # returns list of means 
 def get_mean_list(column_means):
@@ -60,4 +60,4 @@ def plot_year_means(df):
   ax.tick_params(axis='x', rotation=90)
   plt.show()
   
-plot_year_means(df, year)
+plot_year_means(df)

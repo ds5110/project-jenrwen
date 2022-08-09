@@ -84,13 +84,17 @@ python src/Average_Change_Score_by_Classroom_Type.py
 ```
 
 ## Cleaning the data
-Because of the format of the original data, we had to remove family names for privacy and reformat everything in a way that can can be interpreted in a dataframe. To clean out the familiy names (original file with family names not included):
+Because of the format of the original data, we had to remove family names for privacy and reformat everything in a way that can can be interpreted in a dataframe. 
+
+To remove the family names, the names were replaced with the family ID number assigned to them by ChildPlus.
+To clean out the familiy names (original file with family names not included) run:
 
 ```
 python acap_me/app.py
 ```
 
-To reformat data to a usable file:
+We had to remove formatting that made the data easier for humans to read. We looked for keywords in the lines that we needed to remove and also filled in the data about classrooms and forward filled it to each family in that classroon.
+To reformat data to a usable file run:
 ```
 python acap_me/organize.py
 ```

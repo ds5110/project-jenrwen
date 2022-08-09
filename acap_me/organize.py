@@ -2,10 +2,10 @@ import pandas as pd
 import numpy as np
 
 #read all the files
-filename2018 = "Family_outcomes_2018-2019.csv"
-filename2019 = "Family_outcomes_2019-2020.csv"
-filename2020 = "Family_outcomes_2020-2021.csv"
-filename2021 = "Family_outcomes_2021-2022.csv"
+filename2018 = "acap_me/Family_outcomes_2018-2019.csv"
+filename2019 = "acap_me/Family_outcomes_2019-2020.csv"
+filename2020 = "acap_me/Family_outcomes_2020-2021.csv"
+filename2021 = "acap_me/Family_outcomes_2021-2022.csv"
 
 # The encoding option allows for non-standard characters (probably of Windows origin)
 df2018 = pd.read_csv(filename2018, encoding = 'unicode_escape')

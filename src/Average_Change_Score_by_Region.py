@@ -31,7 +31,7 @@ def create_class_changes_subplot(class_changes):
   # plot class changes every year
   fig2, axes2 = plt.subplots(1, 4, figsize=(20, 10))
   fig2.tight_layout()
-  fig2.suptitle('Average Change in Assessment Score by Classroom Type', fontsize = 25, y=1.02)
+  fig2.suptitle('Average Change in Assessment Score by Region', fontsize = 25, y=1.02)
   # loop through all four years
   i = 0
   for value in class_changes:

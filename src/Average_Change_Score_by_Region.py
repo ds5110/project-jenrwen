@@ -65,4 +65,4 @@ def plot_change_classroom_type(df):
   # call function to create subplots
   create_class_changes_subplot(class_changes)
 
-plot_change_classroom_type(df_copy)
+plot_change_classroom_type(df)

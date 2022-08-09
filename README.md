@@ -83,13 +83,21 @@ Average Change in Assessment Score by Classroom Type
 python src/Average_Change_Score_by_Classroom_Type.py
 ```
 
-
 Average Change in Assessment Score by Region
 <img src="figs/fig9.png" width="800">
 
 ```
 python src/Average_Change_Score_by_Region.py
 ```
+
+Number of Families Enrolled by Region
+<img src="figs/fig10.png" width="800">
+
+```
+python src/Number_Families_by_Region.py
+```
+
+
 
 ## Cleaning the data
 Because of the format of the original data, we had to remove family names for privacy and reformat everything in a way that can can be interpreted in a dataframe. 

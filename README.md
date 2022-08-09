@@ -72,6 +72,11 @@ python src/Number_Families_by_Year.py
 Number of Families Enrolled by Classroom Type
 <img src="figs/fig7.png" width="800">
 
+Early Head Start (EHS) and Infant/Toddler (IT) include children under 3. 
+EHS has eligibility guidelines. IT is fee for services.
+Head Start (HS), Preschool (PS) and Early Intervention (EI) are for children 3-5.
+HS has eligibilty guidelines. PS is fee for services. EI is for children with developmental delays.
+
 ```
 python src/Number_Families_by_Classroom_Type.py
 ```

@@ -2,16 +2,6 @@
 
 # Exploring ACAP Family Outcomes
 
-## NOTE to students
-
-This repository provides a fictional example of a project proposal for DS5110, Summer 2022.
-It's based on the [vaccines project](http://ds5010/vaccines) completed by Portland students in 
-the Spring 2022 version of DS 5010.
-Their project was eventually put in a publicly accessible repository and included a 
-github-pages (gh-pages) site: [ds5010.github.io/vaccines](ds5010.github.io/vaccines).
-You can use this repo as guidance for creating your own project proposal.
-Additional guidance is in the [course repo](https://github.com/ds5110/summer-2022/blob/main/projects/projects.md).
-
 ## Project partners
 
 * Jennifer Wen
@@ -20,13 +10,14 @@ Additional guidance is in the [course repo](https://github.com/ds5110/summer-202
 ## Goal
 
 The project goal is to evaluate how family outcomes within ACAP-ME's program changes over the past four years.
-We can see if the scores were affected by the pandemic in the 2020 school year.
-We'll start by looking at how average families scores change and seeing if there is any correlation between different outcome categories.
-If families are enrolled in the program over multiple years, we can investigate the outcome trends for those families.
+We received ChildPlus assessment scores from families in their coaching programs. The assessments are done twice a school year, once at the beginning and once at the end. The use of assessments was piloted in the 2018-2019 and 2019-2020 school years and expanded from there.
+We can use this data to evaluate changes in families' lives and possible impact ACAP has on families as well as get an idea of the growth of the program over time.
+We can also see if the scores were affected by the pandemic in the 2020 school year.
+We'll start by looking at how average families scores change between different outcome categories.
 
 ## Data
 
-Primary sources of data will be from our stakeholder form ACAP.
+Primary sources of data will be from our stakeholder form ACAP. Cleaned and re-formatted versions of the files are in the acap_me folder.
 
 
 ## Stakeholder

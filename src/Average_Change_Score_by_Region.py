@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 
 # read in the combined data file
-df = pd.read_csv('https://raw.githubusercontent.com/ds5110/project-jenrwen/main/acap_me/combined_assessments.csv')
+df = pd.read_csv('acap_me/combined_assessments.csv')
 
 def organize_region_groups(df):
   # organize df by age group based on information from stakeholder

@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 
 # read in the combined data file
-df = pd.read_csv('acap_me/combined_asssessments.csv')
+df = pd.read_csv('acap_me/combined_assessments.csv')
 
 # averages of all assessments each year
 def plot_combined_years(df):

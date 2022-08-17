@@ -28,36 +28,29 @@ Jamie Chandler
 ## Results
 
 The following graph shows the number of families enrolled who filled out the Assessment over the years. This shows the growth of the program each year. It reflects the additional classrooms and coaching team growth.
-Number of Families Enrolled by Year
+
 <img src="../figs/fig6.png" width="800">
 
 
 
 The following 4 graphs show the average scores for the outcomes in Assessment 1 and Assessment 2 over the last 4 school years:
 
-2018 Assesment Outcome Averages
 <img src="../figs/fig1.png" width="800">
 
 
 
-2019 Assesment Outcome Averages
 <img src="../figs/fig2.png" width="800">
 
 
-
-2020 Assesment Outcome Averages
 <img src="../figs/fig3.png" width="800">
 
 
-
-2021 Assesment Outcome Averages
 <img src="../figs/fig4.png" width="800">
-
 We can see that between Assessment 1 and Assessment 2 the scores are usually increasing. Scores for Employment may be lower because of the eligibility requirements for some of the services. Heating scores may be lower because of the cold climate. Heating is needed from October through March.
 
 
 The following graph shows the combine averages of all the outcomes, which we see increasing, on average, between Assessment 1 and 2.
-Combined Assesment Outcome Averages
+
 <img src="../figs/fig5.png" width="800">
 
 

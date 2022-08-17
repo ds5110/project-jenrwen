@@ -27,40 +27,32 @@ Jamie Chandler
 
 ## Results
 
+The following 4 graphs show the average scores for the outcomes in Assessment 1 and Assessment 2 over the last 4 school years:
+
 2018 Assesment Outcome Averages
 <img src="figs/fig1.png" width="800">
 
-```
-python src/Assessment_Outcome_Averages_2018.py
-```
+
 
 2019 Assesment Outcome Averages
 <img src="figs/fig2.png" width="800">
 
-```
-python src/Assessment_Outcome_Averages_2019.py
-```
+
 
 2020 Assesment Outcome Averages
 <img src="figs/fig3.png" width="800">
 
-```
-python src/Assessment_Outcome_Averages_2020.py
-```
+
 
 2021 Assesment Outcome Averages
 <img src="figs/fig4.png" width="800">
 
-```
-python src/Assessment_Outcome_Averages_2021.py
-```
+
 
 Combined Assesment Outcome Averages
 <img src="figs/fig5.png" width="800">
 
-```
-python src/Combined_Years_Assessment_Averages.py
-```
+
 
 Number of Families Enrolled by Year
 <img src="figs/fig6.png" width="800">

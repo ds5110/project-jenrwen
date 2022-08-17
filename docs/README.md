@@ -30,88 +30,51 @@ Jamie Chandler
 The following 4 graphs show the average scores for the outcomes in Assessment 1 and Assessment 2 over the last 4 school years:
 
 2018 Assesment Outcome Averages
-<img src="figs/fig1.png" width="800">
+<img src="../figs/fig1.png" width="800">
 
 
 
 2019 Assesment Outcome Averages
-<img src="figs/fig2.png" width="800">
+<img src="../figs/fig2.png" width="800">
 
 
 
 2020 Assesment Outcome Averages
-<img src="figs/fig3.png" width="800">
+<img src="../figs/fig3.png" width="800">
 
 
 
 2021 Assesment Outcome Averages
-<img src="figs/fig4.png" width="800">
+<img src="../figs/fig4.png" width="800">
 
 
 
 Combined Assesment Outcome Averages
-<img src="figs/fig5.png" width="800">
+<img src="../figs/fig5.png" width="800">
 
 
 
 Number of Families Enrolled by Year
-<img src="figs/fig6.png" width="800">
+<img src="../figs/fig6.png" width="800">
 
-```
-python src/Number_Families_by_Year.py
-```
+
 
 Number of Families Enrolled by Classroom Type
-<img src="figs/fig7.png" width="800">
+<img src="../figs/fig7.png" width="800">
 
 Early Head Start (EHS) and Infant/Toddler (IT) include children under 3. 
 EHS has eligibility guidelines. IT is fee for services.
 Head Start (HS), Preschool (PS) and Early Intervention (EI) are for children 3-5.
 HS has eligibilty guidelines. PS is fee for services. EI is for children with developmental delays.
 
-```
-python src/Number_Families_by_Classroom_Type.py
-```
 
 Average Change in Assessment Score by Classroom Type
-<img src="figs/fig8.png" width="800">
+<img src="../figs/fig8.png" width="800">
 
-```
-python src/Average_Change_Score_by_Classroom_Type.py
-```
 
 Average Change in Assessment Score by Region
-<img src="figs/fig9.png" width="800">
+<img src="../figs/fig9.png" width="800">
 
-```
-python src/Average_Change_Score_by_Region.py
-```
 
 Number of Families Enrolled by Region
-<img src="figs/fig10.png" width="800">
-
-```
-python src/Number_Families_by_Region.py
-```
-
-
-
-## Cleaning the data
-Because of the format of the original data, we had to remove family names for privacy and reformat everything in a way that can can be interpreted in a dataframe. 
-
-To remove the family names, the names were replaced with the family ID number assigned to them by ChildPlus.
-The code to clean out the familiy names (original file with family names not included) run is in the acap_me folder:
-
-```
-acap_me/app.py
-```
-
-We had to remove formatting that made the data easier for humans to read. We looked for keywords in the lines that we needed to remove and also filled in the data about classrooms and forward filled it to each family in that classroon.
-To reformat data to a usable file run:
-```
-python acap_me/organize.py
-```
-
-## Project plan
-
-
+<img src="../figs/fig10.png" width="800">

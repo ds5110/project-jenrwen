@@ -29,29 +29,29 @@ Jamie Chandler
 
 The following graph shows the number of families enrolled who filled out the Assessment over the years. This shows the growth of the program each year. It reflects the additional classrooms and coaching team growth.
 
-<img src="../figs/fig6.png" width="800">
+<img src="figs/fig6.png" width="800">
 
 
 
 The following 4 graphs show the average scores for the outcomes in Assessment 1 and Assessment 2 over the last 4 school years:
 
-<img src="../figs/fig1.png" width="800">
+<img src="figs/fig1.png" width="800">
 
 
 
-<img src="../figs/fig2.png" width="800">
+<img src="figs/fig2.png" width="800">
 
 
-<img src="../figs/fig3.png" width="800">
+<img src="figs/fig3.png" width="800">
 
 
-<img src="../figs/fig4.png" width="800">
+<img src="figs/fig4.png" width="800">
 We can see that between Assessment 1 and Assessment 2 the scores are usually increasing. Scores for Employment may be lower because of the eligibility requirements for some of the services. Heating scores may be lower because of the cold climate. Heating is needed from October through March.
 
 
 The following graph shows the combine averages of all the outcomes, which we see increasing, on average, between Assessment 1 and 2.
 
-<img src="../figs/fig5.png" width="800">
+<img src="figs/fig5.png" width="800">
 
 
 
@@ -59,7 +59,7 @@ The following graph shows the combine averages of all the outcomes, which we see
 
 
 Number of Families Enrolled by Classroom Type
-<img src="../figs/fig7.png" width="800">
+<img src="figs/fig7.png" width="800">
 
 Early Head Start (EHS) and Infant/Toddler (IT) include children under 3. 
 EHS has eligibility guidelines. IT is fee for services.
@@ -68,12 +68,12 @@ HS has eligibilty guidelines. PS is fee for services. EI is for children with de
 
 
 Average Change in Assessment Score by Classroom Type
-<img src="../figs/fig8.png" width="800">
+<img src="figs/fig8.png" width="800">
 
 
 Average Change in Assessment Score by Region
-<img src="../figs/fig9.png" width="800">
+<img src="figs/fig9.png" width="800">
 
 
 Number of Families Enrolled by Region
-<img src="../figs/fig10.png" width="800">
+<img src="figs/fig10.png" width="800">
